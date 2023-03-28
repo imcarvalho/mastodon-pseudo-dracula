@@ -1,0 +1,47 @@
+/* ==UserStyle==
+@name           social.lol - 3/28/2023, 6:56:50 PM
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Mastodon pseudo dracula
+@author         Me
+==/UserStyle== */
+
+@-moz-document domain("social.lol") {
+    .ui,
+    .tabs-bar__wrapper,
+    .columns-area__panels__main,
+    .column{
+        background-color: #282A36;
+    }
+
+    .display-name__account,
+    .status__display-name,
+    .status__prepend .status__display-name strong,
+    .status__prepend,
+    .status__relative-time,
+    .status__action-bar button{  
+        color: #BD93F9;
+    }
+
+    .mention, 
+    .hashtag, 
+    .status-link,
+    .reply-indicator__content a,
+    .status__content a,
+    .active,.column-link--transparent.active,.trends__item__name a,
+    .status__action-bar button{
+        color: #E65DA9;
+    }
+
+    .fa-retweet,
+    .status__prepend-icon,
+    .icon-button.active{
+        color: #49DE80 !important;
+    }
+
+    button,
+    .button,
+    .icon-with-badge__badge {
+        background-color: #E65DA9;
+    }
+}
