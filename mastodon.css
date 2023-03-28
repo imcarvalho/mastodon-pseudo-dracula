@@ -2,7 +2,7 @@
 @name           social.lol - 3/28/2023, 6:56:50 PM
 @namespace      github.com/openstyles/stylus
 @version        1.0.0
-@description    Mastodon pseudo dracula
+@description    A new userstyle
 @author         Me
 ==/UserStyle== */
 
@@ -10,7 +10,9 @@
     .ui,
     .tabs-bar__wrapper,
     .columns-area__panels__main,
-    .column{
+    .column > .scrollable,
+    .column-header,
+    .column-header__button{
         background-color: #282A36;
     }
 
@@ -32,6 +34,10 @@
     .status__action-bar button{
         color: #E65DA9;
     }
+    
+    .react-toggle-thumb,.react-toggle--checked .react-toggle-thumb {
+        border: 1px solid #E65DA9;
+    }
 
     .fa-retweet,
     .status__prepend-icon,
@@ -41,7 +47,8 @@
 
     button,
     .button,
-    .icon-with-badge__badge {
+    .icon-with-badge__badge,
+    .react-toggle--checked .react-toggle-track{
         background-color: #E65DA9;
     }
 }
