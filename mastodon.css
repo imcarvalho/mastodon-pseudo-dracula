@@ -2,53 +2,36 @@
 @name           social.lol - 3/28/2023, 6:56:50 PM
 @namespace      github.com/openstyles/stylus
 @version        1.0.0
-@description    A new userstyle
-@author         Me
+@description    Darcula based on Tangerine UI Mastodon theme
+@author         @imcarvalho
 ==/UserStyle== */
 
 @-moz-document domain("social.lol") {
-    .ui,
-    .tabs-bar__wrapper,
-    .columns-area__panels__main,
-    .column > .scrollable,
-    .column-header,
-    .column-header__button{
-        background-color: #282A36;
-    }
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --color-bg: #282A36;
+            --color-fg: #e0d6d1;
+            --color-fg-muted: #BD93F9AA;
+            --color-secondary-bg: #282A36;
+            --color-secondary-separator: #25201c;
 
-    .display-name__account,
-    .status__display-name,
-    .status__prepend .status__display-name strong,
-    .status__prepend,
-    .status__relative-time,
-    .status__action-bar button{  
-        color: #BD93F9;
-    }
+            --color-content-bg: #282A36;
+            --color-content-fg: #f2f2f2;
+            --color-content-fg-bold: #ffffff;
+            --color-content-fg-muted: #BD93F9AA;
+            --color-content-secondary-bg: #BD93F911;
+            --color-content-secondary-separator: #BD93F911;
+            --color-content-bg-focus: #1b1b1b;
 
-    .mention, 
-    .hashtag, 
-    .status-link,
-    .reply-indicator__content a,
-    .status__content a,
-    .active,.column-link--transparent.active,.trends__item__name a,
-    .status__action-bar button{
-        color: #E65DA9;
-    }
-    
-    .react-toggle-thumb,.react-toggle--checked .react-toggle-thumb {
-        border: 1px solid #E65DA9;
-    }
+            --color-accent: #E65DA9;
+            --color-accent-focus: #E65DA9;
+            --color-accent-lines: #BD93F9;
+            --color-accent-bg: #BD93F911;
+            --color-accent-fg: #ffffff;
 
-    .fa-retweet,
-    .status__prepend-icon,
-    .icon-button.active{
-        color: #49DE80 !important;
-    }
-
-    button,
-    .button,
-    .icon-with-badge__badge,
-    .react-toggle--checked .react-toggle-track{
-        background-color: #E65DA9;
+            --color-lines: transparent;
+            
+            color: #49DE80;
+        }
     }
 }
