@@ -34,4 +34,48 @@
             color: #49DE80;
         }
     }
+    
+    .compose-form .compose-form__buttons-wrapper,
+    .app-body .tabs-bar__wrapper, 
+    .app-body .column-header {
+        background-color: var(--color-bg);
+    }
+    
+    .app-body .compose-form__highlightable {
+        border: 2px solid var(--color-accent-lines);
+        border-radius: 6px;
+    }
+    
+    
+    @media screen and (min-width: 1175px) {
+      .app-body .columns-area__panels__main
+    {
+        width: 100%;
+        max-width: 50vw;
+        padding: 0 20px;
+      }
+    }
+
+    
+    .media-gallery {
+      max-height: 400px
+    }
+    
+    .media-gallery__item--wide {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    
+    .media-gallery__item-thumbnail img, .media-gallery__preview {
+      object-fit: contain;
+    }
+    
+    .media-gallery__item-thumbnail, .media-gallery__item-thumbnail img {
+      max-height: 400px;
+      height: 100%;
+      width: inherit;
+    }
 }
